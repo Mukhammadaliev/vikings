@@ -1,0 +1,14 @@
+.site-footer {
+  padding: 15px 0;
+}
+.site-footer__text {
+  text-align: center;
+  font-size: 18px;
+  line-height: 21px;
+}
+@include breakpoint-down (600) {
+  .site-footer__text {
+    font-size: 16px;
+  line-height: 21px;
+  }
+}

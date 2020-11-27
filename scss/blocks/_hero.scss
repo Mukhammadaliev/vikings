@@ -1,0 +1,23 @@
+.hero {
+  padding: 178px 0 360px;
+}
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@include breakpoint-down (1000) {
+  .hero {
+    padding: 120px 0 282px;
+  }
+}
+@include breakpoint-down (700) {
+  .hero {
+    padding: 80px 0 180px;
+  }
+}
+@include breakpoint-down (450) {
+  .hero {
+    padding: 40px 0 100px;
+  }
+}

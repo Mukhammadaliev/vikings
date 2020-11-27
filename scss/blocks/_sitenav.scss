@@ -1,0 +1,109 @@
+.navbar__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar__item {
+  margin-right: 25px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.navbar__link {
+  font-size: 36px;
+  line-height: 42px;
+  color: #FFFFFF;
+  transition: color 0.3s ease;
+  &:hover {
+    color: #85CCDC;
+    text-decoration: underline;
+  }
+}
+.menu-burger {
+  display: none;
+}
+@include breakpoint-down (1000) {
+  .site-header__nav {
+    display: none;
+  }
+  .menu-burger {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/menu-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+    position: relative;
+    z-index: 10;
+    outline: 0;
+  }
+  .site-header--open .menu-burger {
+    background-image: url("../img/menu-close.svg");
+  }
+  .site-header--open {
+    position: relative;
+    &::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 1100vh;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: 4;
+    }
+  }
+  .site-header--open .site-header__nav {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100vh;
+    background-color: #333;
+    padding: 90px 20px 00px 0;
+    z-index: 5;
+    overflow-y: auto;
+  }
+  .site-header--open .navbar__list {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .site-header--open .navbar__item {
+    margin-right: 0;
+    margin-bottom: 60px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .site-header--open .navbar__link {
+    font-size: 32px;
+    letter-spacing: 1px;
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+      opacity: 0.7;
+    }
+  }
+}
+@include breakpoint-down (650) {
+  .site-header--open .navbar__item {
+    margin-bottom: 25px;
+  }
+
+  .site-header--open .navbar__link {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+@include breakpoint-down (600) {
+  .menu-burger {
+    width: 25px;
+    height: 25px;
+  }
+}

@@ -1,0 +1,106 @@
+.youtube {
+  padding: 444px 0 368px;
+  background-image: url("../img/youtube.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+.youtube__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.youtube__title {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 84px;
+  color: #85CCDC;
+}
+.youtube__title--left {
+  display: block;
+  padding-left: 150px;
+}
+.youtube__link {
+  font-size: 18px;
+  line-height: 21px;
+  padding-right: 150px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/youtube-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    margin-right: 12px;
+  }
+  &::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    bottom: 0;
+  }
+}
+@include breakpoint-down (1200) {
+  .youtube {
+    padding: 350px 0 300px;
+  }
+}
+@include breakpoint-down (1000) {
+  .youtube {
+    padding: 280px 0 220px;
+  }
+  .youtube__title {
+    font-size: 54px;
+  line-height: 70px;
+  }
+  .youtube__link {
+    padding-right: 80px;
+  }
+}
+@include breakpoint-down (800) {
+  .youtube {
+    padding: 190px 0 110px;
+  }
+  .youtube__title {
+    font-size: 36px;
+  line-height: 50px;
+  margin-bottom: 20px;
+  }
+  .youtube__title--left {
+    padding-left: 50px;
+  }
+  .youtube__link {
+    padding-right: 0;
+    font-size: 16px;
+    flex-direction: column;
+    &::before {
+      width: 50px;
+      height: 50px;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
+@include breakpoint-down (430) {
+  .youtube__title {
+    font-size: 28px;
+  line-height: 35px;
+  margin-bottom: 20px;
+  }
+  .youtube__title--left {
+    padding-left: 20px;
+  }
+  .youtube__link {
+    max-width: 150px;
+  }
+}
