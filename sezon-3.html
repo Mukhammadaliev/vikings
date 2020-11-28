@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <header class="header header--sezon-1">
+    <div class="site-header">
+      <div class="container sezon__container">
+        <a href="#" class="logo logo-sezon">
+          <img class="logo-img" src="img/logo.png" alt="">
+        </a>
+      <nav class="site-header__nav navbar sezon--navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="sezon-1.html" class="navbar__link">1 cезон</a>
+          </li>
+          <li class="navbar__item">
+            <a href="sezon-2.html" class="navbar__link">2 cезон</a>
+          </li>
+          <li class="navbar__item navbar__item--active">
+            <a href="sezon-3.html" class="navbar__link">3 cезон</a>
+          </li>
+          <li class="navbar__item">
+            <a href="sezon-4.html" class="navbar__link">4 cезон</a>
+          </li>
+          <li class="navbar__item">
+            <a href="sezon-5.html" class="navbar__link">5 cезон</a>
+          </li>
+          <li class="navbar__item">
+            <a href="sezon-6.html" class="navbar__link">6 cезон</a>
+          </li>
+        </ul>
+      </nav>
+        <button class="menu-burger" type="button"></button>
+      </div>
+    </div>
+    <div class="hero hero-sezon">
+      <div class="container hero__container">
+
+      </div>
+    </div>
+    <div class="header-bottom__sezon">
+      <div class="container sezon__container--bottom">
+        <p class="sezon-number">03<span class="sezon-number--span">сезон</span></p>
+        <div class="sezon-box">
+          <p class="sezon-text">Сериал знакомит нас с жестоким и таинственным миром Рагнара Лодброка, воина-викинга и фермера, который жаждет
+          исследовать—и совершать набеги-далекие берега океана. Его честолюбие ставит его в противоречие с местным вождем графом
+          Харальдсоном, который настаивает на отправке своих рейдеров на бедный Восток, а не на неизведанный Запад. Когда Рагнар
+          объединяется со своим другом-кораблестроителем Флоки, чтобы создать новое поколение бесстрашных кораблей, способных
+          покорять бурные северные моря, сцена готова к конфликту.
+
+          Но несмотря на всю свою войну и кровопролитие, викинги также являются историей семьи и братства, захватывая любовь и
+          привязанность между Рагнаром и его женой Лагертой, свирепой воительницей. Это история о брате Рагнара Ролло, яростном
+          борце, который кипит от ревности; о жене графа Харальдсона Зигги, послушной красавице, которая, возможно, не слишком
+          верна; и о монахе Ательстане, чья христианская мораль противоречит языческому обществу викингов. Когда амбиции и
+          инновации потрясут цивилизацию, эти персонажи будут подвергнуты испытанию—и их образ жизни никогда не будет прежним.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+  <section class="intro">
+    <div class="container">
+      <h2 class="intro__title">Все серии 3 сезона</h2>
+      <ul class="intro__list">
+        <li class="intro__item">
+          <img src="img/sezon1-1.png" alt="" class="intro__img">
+          <a class="intro__item-hover" href="#">Смотреть</a>
+        </li>
+        <li class="intro__item">
+          <img src="img/sezon1-2.png" alt="" class="intro__img">
+          <a class="intro__item-hover" href="#">Смотреть</a>
+        </li>
+        <li class="intro__item">
+          <img src="img/sezon1-3.png" alt="" class="intro__img">
+          <a class="intro__item-hover" href="#">Смотреть</a>
+        </li>
+        <li class="intro__item">
+          <img src="img/sezon1-4.png" alt="" class="intro__img">
+          <a class="intro__item-hover" href="#">Смотреть</a>
+        </li>
+        <li class="intro__item">
+          <img src="img/sezon1-5.png" alt="" class="intro__img">
+          <a class="intro__item-hover" href="#">Смотреть</a>
+        </li>
+        <li class="intro__item">
+          <img src="img/sezon1-6.png" alt="" class="intro__img">
+          <a class="intro__item-hover" href="#">Смотреть</a>
+        </li>
+        <li class="intro__item">
+          <img src="img/sezon1-7.png" alt="" class="intro__img">
+          <a class="intro__item-hover" href="#">Смотреть</a>
+        </li>
+        <li class="intro__item">
+          <img src="img/sezon1-8.png" alt="" class="intro__img">
+          <a class="intro__item-hover" href="#">Смотреть</a>
+        </li>
+        <li class="intro__item">
+          <img src="img/sezon1-9.png" alt="" class="intro__img">
+          <a class="intro__item-hover" href="#">Смотреть</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+
+  <script>
+    var elModalToggler = document.querySelector('.menu-burger');
+    var elModal = document.querySelector('.site-header');
+    var elModalClose = document.querySelector('.site-header--open');
+
+    elModalToggler.addEventListener('click', function () {
+      elModal.classList.toggle('site-header--open');
+    });
+  </script>
+</body>
+</html>

@@ -1,10 +1,15 @@
 .hero {
   padding: 178px 0 360px;
-}
 .hero__container {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@include breakpoint-down (1150) {
+  .sezon__container--bottom {
+    display: none;
+  }
 }
 @include breakpoint-down (1000) {
   .hero {
@@ -20,4 +25,5 @@
   .hero {
     padding: 40px 0 100px;
   }
+}
 }

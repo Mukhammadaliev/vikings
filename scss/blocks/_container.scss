@@ -5,6 +5,10 @@
   margin-left: auto;
   margin-right: auto;
 }
+.sezon__container {
+  display: flex;
+  align-items: center;
+}
 @include breakpoint-down (1000) {
   .container {
     padding-left: 20px;

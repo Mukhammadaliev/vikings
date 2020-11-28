@@ -8,6 +8,10 @@
   &:last-child {
     margin-right: 0;
   }
+  &--active .navbar__link {
+    color: #85CCDC;
+    text-decoration: underline;
+  }
 }
 .navbar__link {
   font-size: 36px;
@@ -22,7 +26,7 @@
 .menu-burger {
   display: none;
 }
-@include breakpoint-down (1000) {
+@include breakpoint-down (1160) {
   .site-header__nav {
     display: none;
   }
